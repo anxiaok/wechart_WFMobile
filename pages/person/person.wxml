@@ -1,5 +1,5 @@
 <view class='top-wrapper' wx:if='{{isLogin}}'>
-    <image class='personHead' src='/iconFront/personHead.png' mode='widthFix'></image>
+    <image class='personHead' src='/iconFront/personLogin.png' mode='widthFix'></image>
     <view class='name-wrapper'>
         <text class='name'>凯凯帅哥</text>
         <text class='home-page'>查看或编辑个人主页</text>
