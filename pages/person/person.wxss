@@ -1,0 +1,95 @@
+page {
+    background-color: #f1f1f1;
+}
+
+.top-wrapper {
+    display: flex;
+    align-items: center;
+    height: 200rpx;
+    background: #fff;
+    padding-left: 33rpx;
+}
+
+.personHead {
+    width: 120rpx;
+}
+
+.name-wrapper {
+    display: inherit;
+    flex-direction: column;
+    align-content:center;
+    margin-left: 33rpx;
+}
+
+.name {
+    font-size: 29rpx;
+    color: #333;
+    font-weight: bold;
+}
+
+.home-page {
+    font-size: 25rpx;
+    color: #999;
+    margin-top: 20rpx;
+}
+
+.middle-wrapper {
+    background: #fff;
+    padding: 0 20rpx;
+    align-items: center;
+    margin-top: 20rpx;
+}
+
+.middle {
+    height: 100rpx;
+    line-height: 100rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    position:relative;
+}
+
+.middle:after {
+    content:'';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #f1f1f1;
+    border-left: transparent;
+    border-bottom: transparent;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    position:absolute;
+    right:0;
+}
+.middle-text {
+    font-size: 24rpx;
+    color: #333;
+    margin-left: 20rpx;
+    font-weight: bold;
+}
+.order,.subscription,.collection,.message,.help,.setting{
+    width:50rpx;
+    margin-left: 10rpx;
+    margin-right:10rpx;
+}
+.wallet {
+    width: 70rpx;
+}
+.check {
+    width: 70rpx;
+}
+.loginBtn{
+    border:1px solid #417dc9;
+    border-radius:30rpx;
+    padding:2rpx 4rpx;
+    width:147rpx;
+    height:40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    color:#417dc9;
+    font-size:24rpx;
+    margin-top:20rpx;
+}

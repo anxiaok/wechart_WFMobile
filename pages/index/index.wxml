@@ -1,0 +1,49 @@
+<view class='header-wrapper'>
+    <view class='header-search'>
+        <view class='search-wrapper'>
+            <image class='searh-image' src='/iconFront/search-white.png' mode='widthFix'></image>
+            <text class='search-text'>检索关键字</text>
+        </view>
+        <view>
+            <image class='scanning' src='/iconFront/scanning.png' mode='widthFix'></image>
+        </view>
+    </view>
+</view>
+<view>
+    <swiper indicator-color='{{defaultColor}}' indicator-active-color='{{activeColor}}' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
+        <block wx:for="{{imgUrls}}" wx:key='item'>
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class='me-middle'>
+    <view wx:for='{{adArray}}' wx:key='index' class='ad-wrapper'>
+        <image class='middle-topic' src='{{item.url}}' mode='widthFix'></image>
+        <text class='middle-text'>{{item.text}}</text>
+    </view>
+</view>
+<view>
+    <view class="swiper-tab">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">最新资讯</view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">深度解读</view>
+        <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">前沿科技</view>
+        <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">智慧生活</view>
+    </view>
+
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" circular='{{circular}}'>
+        <swiper-item>
+            <view>我是最新资讯</view>
+        </swiper-item>
+        <swiper-item>
+            <view>我是深度解读</view>
+        </swiper-item>
+        <swiper-item>
+            <view>我是前沿科技</view>
+        </swiper-item>
+        <swiper-item>
+            <view>我是智慧生活</view>
+        </swiper-item>
+    </swiper>
+</view>

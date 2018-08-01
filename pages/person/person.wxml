@@ -1,0 +1,52 @@
+<view class='top-wrapper' wx:if='{{isLogin}}'>
+    <image class='personHead' src='/iconFront/personHead.png' mode='widthFix'></image>
+    <view class='name-wrapper'>
+        <text class='name'>凯凯帅哥</text>
+        <text class='home-page'>查看或编辑个人主页</text>
+    </view>
+</view>
+<view class='top-wrapper' wx:else>
+    <image class='personHead' src='/iconFront/personHead.png' mode='widthFix'></image>
+    <view class='name-wrapper'>
+        <text class='name'>登录体验更多功能</text>
+        <text class='loginBtn' bindtap='loginBtn'>登录 / 注册</text>
+    </view>
+</view>
+<view class='middle-wrapper'>
+    <view class='middle'>
+        <image class='wallet' src='/iconFront/wallet.png' mode='widthFix'></image>
+        <text class='middle-text'>我的钱包</text>
+    </view>
+    <view class='middle'>
+        <image class='order' src='/iconFront/order.png' mode='widthFix'></image>
+        <text class='middle-text'>我的订单</text>
+    </view>
+    <view class='middle'>
+        <image class='check' src='/iconFront/check.png' mode='widthFix'></image>
+        <text class='middle-text'>我的检测</text>
+    </view>
+</view>
+<view class='middle-wrapper'>
+    <view class='middle'>
+        <image class='subscription' src='/iconFront/subscription.png' mode='widthFix'></image>
+        <text class='middle-text'>我的订阅</text>
+    </view>
+    <view class='middle'>
+        <image class='collection' src='/iconFront/collection.png' mode='widthFix'></image>
+        <text class='middle-text'>我的收藏</text>
+    </view>
+    <view class='middle'>
+        <image class='message' src='/iconFront/message.png' mode='widthFix'></image>
+        <text class='middle-text'>消息中心</text>
+    </view>
+</view>
+<view class='middle-wrapper'>
+    <view class='middle'>
+        <image class='help' src='/iconFront/help.png' mode='widthFix'></image>
+        <text class='middle-text'>帮助</text>
+    </view>
+    <view class='middle'>
+        <image class='setting' src='/iconFront/setting.png' mode='widthFix'></image>
+        <text class='middle-text'>设置</text>
+    </view>
+</view>

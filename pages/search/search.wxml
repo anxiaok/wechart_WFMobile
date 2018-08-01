@@ -1,0 +1,30 @@
+<view class='header-wrapper'>
+    <view class='header-search'>
+        <view class='search-wrapper'>
+            <image class='searh-image' src='/iconFront/search-white.png' mode='widthFix'></image>
+            <input class='search-text' placeholder="请输入关键字" placeholder-style='color:#fff;' focus='true' />
+        </view>
+    </view>
+</view>
+<view class='hot-word-wrapper'>
+    <text class='hot-title'>热搜词</text>
+    <view class='hot-lists'>
+        <view class='hot-words' wx:for='{{hotList}}' wx:key='{{item.id}}'>
+            <image wx:if='{{item.isHot}}' class='crown' src='/iconFront/crown.png' mode='widthFix'></image>
+            <text class='words-text'>{{item.text}}</text>
+        </view>
+    </view>
+</view>
+<view class='history-wrapper' wx:if='{{isShow}}'>
+    <text class='hot-title'>检索历史</text>
+    <view class='history-lists'>
+        <view class='history-words' wx:for='{{historyList}}' wx:key='{{item.id}}'>
+            <text class='history-text'>{{item.text}}</text>
+            <text class='close-words' data-index="{{index}}" bindtap='closeCurrentList'>×</text>
+        </view>
+        <view class='close-wrapper' bindtap='clearList'>
+            <image class='close-image' src='/iconFront/close.png' mode='widthFix'></image>
+            <text>清除搜索记录</text>
+        </view>
+    </view>
+</view>
