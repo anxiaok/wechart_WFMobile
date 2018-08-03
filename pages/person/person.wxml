@@ -9,7 +9,7 @@
     <image class='personHead' src='/iconFront/personHead.png' mode='widthFix'></image>
     <view class='name-wrapper'>
         <text class='name'>登录体验更多功能</text>
-        <text class='loginBtn' bindtap='loginBtn'>登录 / 注册</text>
+        <navigator class='loginBtn' bindtap='loginBtn' url="/pages/login/login" hover-class="navigator-hover">登录 / 注册</navigator>
     </view>
 </view>
 <view class='middle-wrapper'>

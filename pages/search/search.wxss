@@ -91,6 +91,9 @@ page{
 }
 .history-words{
     border-top: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 .history-text{
     color:#666;
@@ -100,7 +103,6 @@ page{
 }
 .close-words{
     color:#ccc;
-    float:right;
     font-size:50rpx;
 }
 .close-wrapper{
