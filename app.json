@@ -3,19 +3,22 @@
         "pages/index/index",
         "pages/search/search",
         "pages/person/person",
-        "pages/login/login"
+        "pages/login/login",
+        "pages/userPassword/userPassword",
+        "pages/proto/proto",
+        "pages/wallet/wallet"
     ],
     "tabBar": {
-        "color":"#333",
+        "color": "#333",
         "selectedColor": "#417dc9",
-        "borderStyle":"black",
-        "backgroundColor":"#fff",
+        "borderStyle": "black",
+        "backgroundColor": "#fff",
         "list": [
             {
                 "pagePath": "pages/index/index",
                 "text": "首页",
-                "iconPath":"iconFront/home.png",
-                "selectedIconPath":"iconFront/home-hover.png"
+                "iconPath": "iconFront/home.png",
+                "selectedIconPath": "iconFront/home-hover.png"
             },
             {
                 "pagePath": "pages/search/search",

@@ -5,7 +5,7 @@
             <text class='search-text'>检索关键字</text>
         </view>
         <view>
-            <image class='scanning' src='/iconFront/scanning.png' mode='widthFix'></image>
+            <image class='scanning' bindtap='scanning' src='/iconFront/scanning.png' mode='widthFix'></image>
         </view>
     </view>
 </view>

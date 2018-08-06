@@ -55,5 +55,17 @@ Page({
                 currentTab: e.target.dataset.current
             })
         }
+    },
+    scanning:function(){
+        wx.scanCode({
+            success: (res) => {
+                console.log(res)
+            }
+        });
+    },
+    onPullDownRefresh: function () {
+        setTimeout(function(){
+            wx.stopPullDownRefresh();
+        },2000);
     }
 })

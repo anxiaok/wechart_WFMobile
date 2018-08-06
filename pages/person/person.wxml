@@ -9,11 +9,11 @@
     <image class='personHead' src='/iconFront/personHead.png' mode='widthFix'></image>
     <view class='name-wrapper'>
         <text class='name'>登录体验更多功能</text>
-        <navigator class='loginBtn' bindtap='loginBtn' url="/pages/login/login" hover-class="navigator-hover">登录 / 注册</navigator>
+        <navigator class='loginBtn' url="/pages/login/login" hover-class="navigator-hover">登录 / 注册</navigator>
     </view>
 </view>
-<view class='middle-wrapper'>
-    <view class='middle'>
+<view class='middle-wrapper' bindtap='isLoginBtn'>
+    <view class='middle' catchtap='walletBtn'>
         <image class='wallet' src='/iconFront/wallet.png' mode='widthFix'></image>
         <text class='middle-text'>我的钱包</text>
     </view>
@@ -26,7 +26,7 @@
         <text class='middle-text'>我的检测</text>
     </view>
 </view>
-<view class='middle-wrapper'>
+<view class='middle-wrapper' bindtap='isLoginBtn'>
     <view class='middle'>
         <image class='subscription' src='/iconFront/subscription.png' mode='widthFix'></image>
         <text class='middle-text'>我的订阅</text>
