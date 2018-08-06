@@ -1,0 +1,130 @@
+.clear:after{
+    content:'';
+    display:block;
+    clear:both;
+    visibility: hidden;
+    width:0;
+    height:0;
+    line-height: 0;
+}
+.login-wrapper {
+    background: #fff;
+    padding: 20rpx 30rpx;
+}
+
+.login-title {
+    font-size: 24rpx;
+    color: #333;
+    margin-bottom:20rpx;
+}
+
+.section {
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    height: 80rpx;
+}
+
+.mobile-input {
+    font-size: 24rpx;
+    width: 100%;
+    padding-left: 22rpx;
+}
+
+.mobile-code {
+    color: #333;
+    font-size: 24rpx;
+    padding-right: 30rpx;
+    position: relative;
+}
+
+.mobile-code:after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ccc;
+    border-left: transparent;
+    border-top: transparent;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: -10rpx;
+    top: 0;
+}
+
+.code-input {
+    width: 100%;
+    font-size: 24rpx;
+}
+
+.code-text {
+    font-size: 24rpx;
+    width: 146rpx;
+    color:#417dc9;
+}
+.tips{
+    color:#ccc;
+    font-size:24rpx;
+    display: flex;
+    align-items: center;
+    margin-top:40rpx;
+    margin-bottom:20rpx;
+}
+.proto{
+    color:#417dc9;
+    text-decoration:underline;
+}
+button{
+    width:100%;
+    height:60rpx;
+    line-height: 60rpx;
+    color:#fff;
+    background: #417dc9;
+    font-size:24rpx;
+    margin-top:50rpx;
+}
+.password-login{
+    float:right;
+    font-size:24rpx;
+    color:#417dc9;
+    text-decoration: underline;
+    margin:30rpx 0;
+}
+.three-title-wrapper{
+    text-align: center;
+    position:relative;
+}
+.three-title-wrapper:before{
+    content:'';
+    display: block;
+    width:100%;
+    height:40rpx;
+    line-height: 40rpx;
+    border-top:1px solid #f1f1f1;
+    position:absolute;
+    top:30rpx;
+}
+.three-title{
+    color:#333;
+    font-size:24rpx;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    background:#fff;
+    padding:0 50rpx;
+    position:relative;
+    z-index: 1;
+}
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three-image{
+    width:80rpx;
+    height:200rpx;
+    margin:0 40rpx;
+}

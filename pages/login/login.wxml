@@ -1,0 +1,29 @@
+<view class='login-wrapper clear'>
+    <text class='login-title'>若您的手机号未注册，系统将自动为您生成万方账号</text>
+    <form bindsubmit="formSubmit">
+        <view class="section">
+            <view class="mobile">
+                <navigator url='' class='mobile-code' hover-class='none'>+86</navigator>
+            </view>
+            <input class='mobile-input' type='number' name="phone" placeholder="请输入手机号" placeholder-style='color:#ccc;' bindblur='transValue'/>
+        </view>
+        <view class="section">
+            <input class='code-input' type='number' name="code" placeholder="请输入验证码" placeholder-style='color:#ccc;' />
+            <text class='code-text' bindtap='verificationPhone'>获取验证码</text>
+        </view>
+        <view>
+            <view class='tips'>选择登录代表您已阅读并同意
+                <navigator url='/pages/proto/proto' class='proto'>万方数据用户服务协议</navigator>
+            </view>
+        </view>
+        <button formType="submit" hover-class='none'>登录</button>
+    </form>
+    <navigator url='/pages/userPassword/userPassword' class='password-login' hover-class='none'>用户名密码登录</navigator>
+</view>
+<view class='three-wrapper'>
+    <view class='three-title-wrapper'><text class='three-title'>第三方账号登录</text></view>
+    <view class='image-wrapper'>
+        <image class='three-image' src='/iconFront/qq.png' mode='aspectFit'></image>
+        <image class='three-image' src='/iconFront/wechart.png' mode='aspectFit'></image>
+    </view>
+</view>

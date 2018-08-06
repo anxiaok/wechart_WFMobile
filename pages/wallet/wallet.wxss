@@ -1,0 +1,77 @@
+.count-wrapper {
+    margin: 30rpx;
+    background: linear-gradient(to right, #3ebae2, #4181cb);
+    border-radius: 20rpx;
+    height: 300rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40rpx;
+}
+
+text {
+    display: block;
+}
+
+.count-title, .card-title {
+    font-size: 24rpx;
+    color: #9ad5ed;
+    margin-bottom: 40rpx;
+}
+
+.count-num {
+    font-size: 60rpx;
+    color: #fff;
+    margin-bottom: 40rpx;
+}
+
+.card-num {
+    font-size: 24rpx;
+    color: #dcf1f9;
+}
+
+.btn-wrapper {
+    align-self: flex-end;
+}
+
+navigator {
+    background: linear-gradient(to bottom, #3fbde3, #4182cb);
+    width: 120rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    color: #fff;
+    font-size: 24rpx;
+    display: inline-block;
+    margin-left: 30rpx;
+    text-align: center;
+}
+
+.lists-wrapper {
+    border-top: 20rpx solid #f1f1f1;
+    padding:0 30rpx;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding:20rpx 0;
+    border-bottom:2rpx solid #f5f5f5;
+}
+
+.card-numbers {
+    font-size: 24rpx;
+    color: #797979;
+}
+
+.money {
+    font-size: 24rpx;
+    color: #666;
+    font-weight: bold;
+}
+
+.sub-titles {
+    font-size: 24rpx;
+    color: #ccc;
+    text-align: right;
+}
