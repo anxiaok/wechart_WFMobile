@@ -6,7 +6,9 @@
         "pages/login/login",
         "pages/userPassword/userPassword",
         "pages/proto/proto",
-        "pages/wallet/wallet"
+        "pages/wallet/wallet",
+        "pages/order/order",
+        "pages/check/check"
     ],
     "tabBar": {
         "color": "#333",

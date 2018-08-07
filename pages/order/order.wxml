@@ -1,0 +1,21 @@
+<view class='order-lists'>
+    <view class='order' wx:for='{{dataList}}' wx:key='index'>
+        <view class='title-wrapper'>
+            <text class='title-type'>{{item}}、 [万方分析]</text>
+            <text class='title-name'>期刊分析：北京农业</text>
+        </view>
+        <view class='sub'>
+            <text class='sub-title'>973743216594362368</text>
+            <text class='sub-title'>已完成</text>
+        </view>
+        <view class='sub'>
+            <text class='sub-title'>2018-03-14 10:50:32</text>
+            <view class='sub-title'>余额支付：
+                <text class='sub-title-num'>0.00元</text>
+            </view>
+        </view>
+    </view>
+    <view class='no-data'>
+    没有更多数据
+    </view>
+</view>

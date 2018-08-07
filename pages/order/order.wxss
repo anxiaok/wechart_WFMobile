@@ -1,0 +1,43 @@
+page{
+    background:#f1f1f1;
+}
+.order-lists{
+    background:#fff;
+}
+.order{
+    border-bottom:1px solid #f1f1f1;
+    padding:0 30rpx;
+}
+.title-wrapper{
+    font-size:24rpx;
+    color:#666;
+    margin-bottom:26rpx;
+    padding-top:26rpx;
+}
+.title-type{
+    color:#427EC9;
+    margin-right:20rpx;
+}
+.title-name{
+    font-weight:bold;
+}
+.sub{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:26rpx;
+}
+.sub-title{
+    color:#ccc;
+    font-size:24rpx;
+}
+.sub-title-num{
+    font-size:24rpx;
+    color:#f00;
+}
+.no-data{
+    text-align: center;
+    color:#ccc;
+    font-size:24rpx;
+    padding:24rpx 0;
+    background: #f1f1f1;
+}

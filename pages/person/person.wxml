@@ -12,21 +12,21 @@
         <navigator class='loginBtn' url="/pages/login/login" hover-class="navigator-hover">登录 / 注册</navigator>
     </view>
 </view>
-<view class='middle-wrapper' bindtap='isLoginBtn'>
+<view class='middle-wrapper'>
     <view class='middle' catchtap='walletBtn'>
         <image class='wallet' src='/iconFront/wallet.png' mode='widthFix'></image>
         <text class='middle-text'>我的钱包</text>
     </view>
-    <view class='middle'>
+    <view class='middle' catchtap='orderBtn'>
         <image class='order' src='/iconFront/order.png' mode='widthFix'></image>
         <text class='middle-text'>我的订单</text>
     </view>
-    <view class='middle'>
+    <view class='middle' catchtap='checkBtn'>
         <image class='check' src='/iconFront/check.png' mode='widthFix'></image>
         <text class='middle-text'>我的检测</text>
     </view>
 </view>
-<view class='middle-wrapper' bindtap='isLoginBtn'>
+<view class='middle-wrapper'>
     <view class='middle'>
         <image class='subscription' src='/iconFront/subscription.png' mode='widthFix'></image>
         <text class='middle-text'>我的订阅</text>

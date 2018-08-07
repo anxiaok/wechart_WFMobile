@@ -8,42 +8,62 @@ Page({
         isLogin: false
     },
     isLoginBtn: function() {
-        if (!this.data.isLogin){
-            wx.showModal({
-                content: '以下功能需要登录后才能体验',
-                cancelText:'再看看',
-                cancelColor:'#FF518C',
-                confirmText:'去登录',
-                confirmColor:'#FF518C',
-                success: function (res) {
-                    if (res.confirm) {
-                        wx.navigateTo({
-                            url: '/pages/login/login'
-                        })
-                    } else if (res.cancel) {
-                        console.log('用户点击取消')
-                    }
+        wx.showModal({
+            content: '以下功能需要登录后才能体验',
+            cancelText: '再看看',
+            cancelColor: '#FF518C',
+            confirmText: '去登录',
+            confirmColor: '#FF518C',
+            success: function(res) {
+                if (res.confirm) {
+                    wx.navigateTo({
+                        url: '/pages/login/login'
+                    })
+                } else if (res.cancel) {
+                    console.log('用户点击取消')
                 }
-            });
+            }
+        });
+    },
+    walletBtn: function() {
+        if (!this.data.isLogin) {
+            this.isLoginBtn();
+        } else {
+            wx.navigateTo({
+                url: '/pages/wallet/wallet'
+            })
         }
     },
-    walletBtn:function(){
-        wx.navigateTo({
-            url: '/pages/wallet/wallet'
-        })
+    orderBtn: function() {
+        if (!this.data.isLogin) {
+            this.isLoginBtn();
+        } else {
+            wx.navigateTo({
+                url: '/pages/order/order'
+            })
+        }
+    },
+    checkBtn: function() {
+        if (!this.data.isLogin) {
+            this.isLoginBtn();
+        } else {
+            wx.navigateTo({
+                url: '/pages/check/check'
+            })
+        }
     },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-        
+
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function() {
-       
+
     },
 
     /**
