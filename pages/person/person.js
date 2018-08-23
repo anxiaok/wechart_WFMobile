@@ -5,7 +5,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-        isLogin: false
+        isLogin: ''
     },
     isLoginBtn: function() {
         wx.showModal({
@@ -55,29 +55,37 @@ Page({
     /**
      * 生命周期函数--监听页面加载
      */
+    commonIsLogin:function(){
+        try {
+            var value = wx.getStorageSync('isLogin');
+            if (value) {
+                this.setData({
+                    isLogin: true
+                });
+            } else {
+                this.setData({
+                    isLogin: false
+                });
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    },
     onLoad: function(options) {
-
+        this.commonIsLogin();
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function() {
-
     },
 
     /**
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
-        wx.getStorage({
-            key: 'isLogin',
-            success: (res) => {
-                this.setData({
-                    isLogin: res.data
-                });
-            }
-        })
+        this.commonIsLogin();
     },
 
     /**

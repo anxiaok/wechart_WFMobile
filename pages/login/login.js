@@ -53,26 +53,24 @@ Page({
         }
         if (isVerification && params.code) {
             wx.request({
-                url: '',
+                url: 'https://localhost:3001/login',
                 dataType: 'json',
                 data: params,
+                method:'POST',
                 success: function(result) {
-                    wx.setStorage({
-                        key: "isLogin",
-                        data: true
-                    });
-                },
-                fail: function() {
-                    console.log('error');
-                    wx.setStorage({
-                        key: "isLogin",
-                        data: true
-                    });
+                    if(result.data){
+                        try {
+                            wx.setStorageSync('isLogin', result.data)
+                            wx.switchTab({
+                                url: '/pages/person/person'
+                            })
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    }
                 }
             })
-            wx.switchTab({
-                url: '/pages/person/person'
-            });
+           
         }
 
     },
