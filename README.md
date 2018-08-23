@@ -1,5 +1,5 @@
 # 提前预览
-<!-- ![avatar](preView.gif) -->
+![avatar](preView.gif)
 
 ## 主要功能
 
