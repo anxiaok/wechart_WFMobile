@@ -25,6 +25,7 @@ Page({
       ],
       isShow:true
   },
+  //关闭当前列表
     closeCurrentList:function(e){
         let dataset = e.target.dataset;
         let index = dataset.index;
@@ -35,6 +36,7 @@ Page({
         let length = this.data.historyList.length;
         !length && this.setData({isShow: false});
     },
+    //清除列表
     clearList:function(){
         wx.showModal({
             content: '确定清空检索历史',

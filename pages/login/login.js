@@ -8,12 +8,14 @@ Page({
     data: {
         transValues: ''
     },
+    //值去空
     transValue: function(e) {
         let value = e.detail.value;
         let reg = /(^\s+) | (\s+$)/g;
         value = value.replace(reg, '');
         this.data.transValues = value;
     },
+    //验证手机号
     verificationPhone: function() {
         let value = this.data.transValues;
         if (!value) {
@@ -36,6 +38,7 @@ Page({
         }
         return true;
     },
+    //表单提交
     formSubmit: function(e) {
         let isVerification = this.verificationPhone();
         let params = e.detail.value;

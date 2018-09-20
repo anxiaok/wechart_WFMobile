@@ -13,24 +13,5 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.1",
 	"appid": "wxb5f5195aee5de360",
-	"projectname": "wechart_WFMobile",
-	"isGameTourist": false,
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": []
-		}
-	}
+	"projectname": "wechart_WFMobile"
 }
